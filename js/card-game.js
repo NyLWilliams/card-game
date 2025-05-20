@@ -23,7 +23,12 @@ let newDeck = [];
 for(let suit of suits){
     for(let value of values){
         const filename = `${value.name}${suit.name}.svg`;
-        newDeck.push({ suit: suit.symbol, name: value.name, rank: value.rank, suitLetter: suit.letter, image: `cards-svg/${filename}`
+        newDeck.push({ 
+            suit: suit.symbol, 
+            name: value.name, 
+            rank: value.rank,
+            suitLetter: suit.letter, 
+            image: `cards-svg/${filename}`
         });
     }
 }
