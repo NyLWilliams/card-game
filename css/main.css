@@ -1,11 +1,20 @@
 .card {
     font-size: 90px;
-    margin: 20px;
+    height: 140px;
     border: 3px solid blue;
     border-radius: 10px;
-    display: inline-block;
+    display: flex;
     width: 120px;
-    background: #34465e
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-value{
+    margin-bottom: 10px;
+}
+.card-suit{
+    font-size: 60px;
 }
 .buttons{
     margin: 20px;
