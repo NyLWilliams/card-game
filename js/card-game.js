@@ -61,6 +61,7 @@ function makeGuess(guess){
         document.getElementById("message").textContent ="No more cards! Game Over.";
         return;
     }
+    makeGuess.addEventListener('click', Higher || Lower);
     const currentCard = hand[currentIndex];
     const nextCard = hand[currentIndex + 1]; 
     let correct = false;
