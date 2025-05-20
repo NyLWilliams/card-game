@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css"
+    </head>
+    <title>Higher or Lower Card Game</title>
+    <body>
+        <div class="game">
+        <h1>Higher or Lower? 13 Cards Max</h1>
+        <div class="card" id="card-display">?</div>
+        <div class="buttons">
+            <button onclick="guess('higher')">Higher</button>
+            <button onclick="guess('lower')">Lower</button>
+        </div>
+        </div>
+        <div id="message"></div>
+        <div id="score">Score: 0</div>
+        <div id="cards-left">Cards Left: 13</div>
+        <button onclick="startGame()">Restart Game</button>
+        <script src="card-game.js"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #2c3e60;
+            color: white;
+            text-align: center;
+            padding: 50px
+        }
+     </style>
+   </body>
+</html>

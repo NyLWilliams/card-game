@@ -1,0 +1,39 @@
+.card {
+    font-size: 90px;
+    margin: 20px;
+    border: 3px solid blue;
+    border-radius: 10px;
+    display: inline-block;
+    width: 120px;
+    background: #34465e
+}
+.buttons{
+    margin: 20px;
+}
+button{
+    font-size: 12px;
+    padding: 10px 20px; 
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    transition: background 0.3s;
+}
+button:hover{
+    background-color: #2980b9;
+}
+#score, #cards-left{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.game{
+    max-width: 350px;
+    margin: auto;
+}
+#message{
+    margin-top: 10px;
+    font-size: 16px;
+}
