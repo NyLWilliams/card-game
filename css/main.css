@@ -28,3 +28,11 @@ button:hover{
     margin-top: 20px;
     font-size: 24px;
 }
+.game{
+    max-width: 350px;
+    margin: auto;
+}
+#message{
+    margin-top: 10px;
+    font-size: 16px;
+}
