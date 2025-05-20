@@ -46,3 +46,7 @@ button:hover{
     margin-top: 10px;
     font-size: 16px;
 }
+.card img{
+    width: 100px;
+    height: auto;
+}

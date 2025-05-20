@@ -38,13 +38,14 @@ function startGame(){
     currentIndex = 0;
     score = 0;
     updateCardDisplay();
-    document.getElementById("message").textContent = '';
-    document.getElementById("score").textContent = `Score: ${score}`;
+    document.getElementById("card-image").src = card.image;
+    document.getElementById("card-image").alt = `${card.name}${card.suit}`; ;
     document.getElementById("cards-left").textContent = `Cards Left: ${hand.length - currentIndex}`;
 }
 function updateCardDisplay(){
     const card = hand[currentIndex];
-    document.getElementById("card-display").textContent = `${card.name}${card.suit}`;
+    document.getElementById("card-image").src = card.image;
+    document.getElementById("card-image").alt = `${card.name}${card.suit}`; 
 }
 function makeGuess(guess){
     if(currentIndex >= hand.length - 1){
@@ -66,8 +67,8 @@ function makeGuess(guess){
 
     currentIndex++;
     updateCardDisplay();
-    document.getElementById("message").textContent = '';
-    document.getElementById("score").textContent = `Score: ${score}`;
+    document.getElementById("card-image").src = card.image;
+    document.getElementById("card-image").alt = `${card.name}${card.suit}`; 
     document.getElementById("cards-left").textContent = `Cards Left: ${hand.length - currentIndex}`;
     if (currentIndex === hand.length -1){
         document.getElementById("message").textContent += `Game Over! Final Score: ${score}/12`;
