@@ -1,3 +1,10 @@
+const playerCard = document.getElementById('playerCard');
+const cardImages = [
+    SVG-cards-1.3
+]
+
+
+
 let deck = [];
 let hand = [];
 let currentIndex = 0;
