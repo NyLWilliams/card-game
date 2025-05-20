@@ -51,8 +51,9 @@ function startGame(){
 }
 function updateCardDisplay(){
     const card = hand[currentIndex];
-    document.getElementById("card-image").src = card.image;
-    document.getElementById("card-image").alt = `${card.name}${card.suit}`; 
+    const cardImage = document.getElementById("card-image");
+    cardImage.src = card.Image;
+    cardImage.alt = `${card.name}${card.suit}`;
 
 }
 function makeGuess(guess){
@@ -75,8 +76,10 @@ function makeGuess(guess){
 
     currentIndex++;
     updateCardDisplay();
-    document.getElementById("card-image").src = card.image;
-    document.getElementById("card-image").alt = `${card.name}${card.suit}`; 
+    const card = hand[currentIndex];
+    const cardImage = document.getElementById("card-image");
+    cardImage.src = card.Image;
+    cardImage.alt = `${card.name}${card.suit}`;
     document.getElementById("cards-left").textContent = `Cards Left: ${hand.length - currentIndex}`;
     if (currentIndex === hand.length -1){
         document.getElementById("message").textContent += `Game Over! Final Score: ${score}/12`;
